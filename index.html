@@ -19,6 +19,33 @@
       font-size: 24px;
       font-weight: bold;
     }
+    .offers {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding: 15px;
+      background: white;
+    }
+    .offer-card {
+      min-width: 200px;
+      background: #fff0e6;
+      border: 1px solid #ffd0b3;
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .offer-card h3 {
+      margin: 0;
+      color: #ff6b35;
+    }
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 15px 0;
+      flex-wrap: wrap;
+    }
     .search {
       text-align: center;
       padding: 15px;
@@ -76,6 +103,29 @@
   <div class="search">
     <input type="text" placeholder="Search for restaurants or dishes...">
   </div>
+  <!-- Offers Section -->
+  <div class="offers">
+    <div class="offer-card">
+      <h3>50% OFF</h3>
+      <p>On your first order</p>
+    </div>
+    <div class="offer-card">
+      <h3>Free Delivery</h3>
+      <p>On orders above ₹199</p>
+    </div>
+    <div class="offer-card">
+      <h3>Buy 1 Get 1</h3>
+      <p>Pizza & Burgers</p>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="categories">
+    <div>Pizza</div>
+    <div>Biryani</div>
+    <div>Burgers</div>
+    <div>Desserts</div>
+  </div>
 
   <div class="categories">
     <div>Pizza</div>
@@ -109,5 +159,7 @@
 
 </body>
 </html>
+
+
 
 
